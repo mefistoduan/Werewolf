@@ -2,10 +2,14 @@
     <div class="index">
         <h1>欢迎来到狼人杀助手demo</h1>
         <p>本局人数</p>
-        <select name="people" id="">
-            <option value="9"></option>
-        </select>
-        <v-button large primary value="确定"></v-button>
+        <v-select v-model="initValue" dropdown-class-name="aaaaa" :dropdown-z-index="9898"  >
+            <v-option value="9">9</v-option>
+            <v-option value="10">10</v-option>
+            <v-option value="11">11</v-option>
+            <v-option value="12">12</v-option>
+        </v-select>
+        <br>
+        <v-button large primary value="确定" ></v-button>
     </div>
 </template>
 
@@ -15,7 +19,9 @@
     export default {
         name: 'index',
         components: {
-            vButton: atui.Button
+            vButton: atui.Button,
+            vSelect: atui.Select,
+            vOption: atui.Option,
         }
     }
 </script>
