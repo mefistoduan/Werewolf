@@ -1,7 +1,6 @@
 <template>
   <div class="desk">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    123
   </div>
 </template>
 
